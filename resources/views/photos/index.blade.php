@@ -8,7 +8,7 @@
             <img src="{{ asset($photo->url) }}"height="255" class="card-img-top">
             <div class="card-body">
                 <h1>{{$photo -> title}}</h1>
-                <p class="card-text">{!!$photo->description!!}</p>
+                <p class="card-text">{!! Str::limit($photo->description,100)!!}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a href=" {{ route ('photos.show', $photo->id) }}" class="btn btn-sm btn-outline-secondary">View</a>

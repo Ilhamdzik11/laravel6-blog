@@ -13,7 +13,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                                             </div>
-                    <small class="text-muted">9 mins</small>
+                   <small class="text-muted">{{ $photo->created_at->diffForHumans()}}</small>
                 </div>
             </div>
         </div>
