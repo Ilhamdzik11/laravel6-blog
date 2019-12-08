@@ -23,5 +23,5 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('photos', 'PhotoController@index');
-Route::get('photos/{id}', 'PhotoController@show');
+Route::get('photos', 'PhotoController@index')->name('photos.index');
+Route::get('photos/{id}', 'PhotoController@show')->name('photos.show');
